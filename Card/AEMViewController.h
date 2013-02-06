@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AEMViewController : UIViewController
+@property (nonatomic)int matchesNeeded;
 
 @end
