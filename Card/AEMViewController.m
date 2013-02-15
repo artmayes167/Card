@@ -9,6 +9,7 @@
 #import "AEMViewController.h"
 #import "PlayingCardDeck.h"
 #import "AEMCardMatchingGame.h"
+#import "AEMGameResult.h"
 
 @interface AEMViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
@@ -18,9 +19,16 @@
 @property (nonatomic) int flipCount;
 @property (nonatomic) int priorScore;
 @property (strong, nonatomic) AEMCardMatchingGame *game;
+@property (strong, nonatomic) AEMGameResult *gameResult;
 @end
 
 @implementation AEMViewController
+
+-(AEMGameResult *)gameResult
+{
+    if (!_gameResult) _gameResult = [[AEMGameResult alloc] init];
+    return _gameResult;
+}
 
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -71,6 +79,7 @@
         Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
         [cardButton setImage:[UIImage imageNamed:card.imageName] forState:UIControlStateSelected];
         [cardButton setImage:[UIImage imageNamed:card.imageName] forState:UIControlStateSelected|UIControlStateDisabled];
+        
         cardButton.selected = card.isFaceUp;
         cardButton.enabled = !card.isUnplayable;
         cardButton.alpha = (card.isUnplayable ? 0.3 : 1.0); // if/else
@@ -89,12 +98,13 @@
 
 - (IBAction)flipCard:(UIButton *)sender
 {
-    
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     
     if (!sender.isSelected) self.flipCount++;
     
     [self updateUI];
+    
+    self.gameResult.score = self.game.score;
 }
 
 

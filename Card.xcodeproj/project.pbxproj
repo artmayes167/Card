@@ -88,6 +88,12 @@
 		C12D1BD716BED6900094BD17 /* NSObject+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D1BD216BED6900094BD17 /* NSObject+MKBlockAdditions.m */; };
 		C12D1BD816BED6900094BD17 /* UIActionSheet+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D1BD416BED6900094BD17 /* UIActionSheet+MKBlockAdditions.m */; };
 		C12D1BD916BED6900094BD17 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D1BD616BED6900094BD17 /* UIAlertView+MKBlockAdditions.m */; };
+		C13996B816CD3BA200988086 /* NewCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13996B716CD3BA200988086 /* NewCardGameViewController.m */; };
+		C13996BB16CD408F00988086 /* PlayingCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C13996BA16CD408F00988086 /* PlayingCardCollectionViewCell.m */; };
+		C13996BE16CD414E00988086 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C13996BD16CD414E00988086 /* PlayingCardView.m */; };
+		C13996C116CD4AF200988086 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13996C016CD4AF200988086 /* PlayingCardGameViewController.m */; };
+		C14D90C216C4024200408A37 /* AEMGameResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14D90C116C4024200408A37 /* AEMGameResultsViewController.m */; };
+		C14D90C516C4045D00408A37 /* AEMGameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C14D90C416C4045D00408A37 /* AEMGameResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +192,18 @@
 		C12D1BD416BED6900094BD17 /* UIActionSheet+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		C12D1BD516BED6900094BD17 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		C12D1BD616BED6900094BD17 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		C13996B616CD3BA200988086 /* NewCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCardGameViewController.h; sourceTree = "<group>"; };
+		C13996B716CD3BA200988086 /* NewCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCardGameViewController.m; sourceTree = "<group>"; };
+		C13996B916CD408F00988086 /* PlayingCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardCollectionViewCell.h; path = ../PlayingCardCollectionViewCell.h; sourceTree = "<group>"; };
+		C13996BA16CD408F00988086 /* PlayingCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardCollectionViewCell.m; path = ../PlayingCardCollectionViewCell.m; sourceTree = "<group>"; };
+		C13996BC16CD414E00988086 /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		C13996BD16CD414E00988086 /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
+		C13996BF16CD4AF200988086 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
+		C13996C016CD4AF200988086 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
+		C14D90C016C4024200408A37 /* AEMGameResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEMGameResultsViewController.h; sourceTree = "<group>"; };
+		C14D90C116C4024200408A37 /* AEMGameResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEMGameResultsViewController.m; sourceTree = "<group>"; };
+		C14D90C316C4045D00408A37 /* AEMGameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEMGameResult.h; sourceTree = "<group>"; };
+		C14D90C416C4045D00408A37 /* AEMGameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEMGameResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +256,16 @@
 				C11EBA0016B40A4500C445EA /* AEMViewController.h */,
 				C11EBA0116B40A4500C445EA /* AEMViewController.m */,
 				C11EB9EC16B40A4500C445EA /* Supporting Files */,
+				C14D90C016C4024200408A37 /* AEMGameResultsViewController.h */,
+				C14D90C116C4024200408A37 /* AEMGameResultsViewController.m */,
+				C13996B916CD408F00988086 /* PlayingCardCollectionViewCell.h */,
+				C13996BA16CD408F00988086 /* PlayingCardCollectionViewCell.m */,
+				C13996B616CD3BA200988086 /* NewCardGameViewController.h */,
+				C13996B716CD3BA200988086 /* NewCardGameViewController.m */,
+				C13996BC16CD414E00988086 /* PlayingCardView.h */,
+				C13996BD16CD414E00988086 /* PlayingCardView.m */,
+				C13996BF16CD4AF200988086 /* PlayingCardGameViewController.h */,
+				C13996C016CD4AF200988086 /* PlayingCardGameViewController.m */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -271,6 +299,8 @@
 				C11EBA1216B4180C00C445EA /* PlayingCardDeck.m */,
 				C12D1B4E16BEA7330094BD17 /* AEMCardMatchingGame.h */,
 				C12D1B4F16BEA7330094BD17 /* AEMCardMatchingGame.m */,
+				C14D90C316C4045D00408A37 /* AEMGameResult.h */,
+				C14D90C416C4045D00408A37 /* AEMGameResult.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -507,6 +537,12 @@
 				C12D1BD716BED6900094BD17 /* NSObject+MKBlockAdditions.m in Sources */,
 				C12D1BD816BED6900094BD17 /* UIActionSheet+MKBlockAdditions.m in Sources */,
 				C12D1BD916BED6900094BD17 /* UIAlertView+MKBlockAdditions.m in Sources */,
+				C14D90C216C4024200408A37 /* AEMGameResultsViewController.m in Sources */,
+				C14D90C516C4045D00408A37 /* AEMGameResult.m in Sources */,
+				C13996B816CD3BA200988086 /* NewCardGameViewController.m in Sources */,
+				C13996BB16CD408F00988086 /* PlayingCardCollectionViewCell.m in Sources */,
+				C13996BE16CD414E00988086 /* PlayingCardView.m in Sources */,
+				C13996C116CD4AF200988086 /* PlayingCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
